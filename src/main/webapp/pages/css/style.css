@@ -1,0 +1,611 @@
+
+/*body{*/
+    /*background: url(../images/123.png);*/
+    /*-moz-background-size: 100%;*/
+    /*-webkit-background-size: 100%;*/
+    /*-o-background-size: 100%;*/
+    /*background-size: 100%;*/
+    /*background-image:url(../images/123.png);*/
+    /*margin:0px;*/
+    /*padding:0px;*/
+    /*min-width:1500px;									!*мин. ширина при масштабировании окна *!*/
+    /*background-size:cover;*/
+    /*background-repeat:no-repeat;*/
+    /*background-position:center;*/
+    /*background-color:#71707f;*/
+    /*background-color:#6B6485;*/
+    /*background: url(../images/im7.jpg) no-repeat center center fixed;*/
+/*}*/
+
+div {margin:0px auto; display: block;}
+
+/*шапка сайта*/
+.header_container {
+    min-width:1100px; width: 1100px;
+    z-index:100;
+
+}
+/*.login_menu{*/
+    /*min-width:200px;*/
+    /*float:right;		!*обтекание элемента по правому краю*!*/
+    /*height:100px;*/
+    /*background-color:#ccc5cc;*/
+    /*width:15%;*/
+    /*padding:15px 10px 10px 10px;*/
+    /*border-radius:9px 0 0 8px;*/
+    /*overflow:hidden;*/
+/*}*/
+.title {
+    float: inherit;
+    min-width:800px;
+    width:800px;
+    height:35px;
+    /*margin-left:10%;*/
+    text-align:center;
+    padding:15px;
+    background-color:#BFFAFF;
+    overflow:hidden;
+    border-radius: 122px 2px 122px 2px;
+}
+/*Меню*/
+.menu_container
+{
+    margin-top:-15px;
+    margin-left:-10px;
+
+}
+ul.menu li {
+    position: relative;
+    display: inline-block;
+    background: #797;
+    list-style: none;
+    padding: 2px 2px;
+    text-align:center;
+    border-radius:8px;
+    z-index:100;
+}
+ul.menu li:hover {
+    background: green;
+    position:relative;
+}
+ul.menu li a{
+    color: #fff;
+    font-family: Algerian;
+    text-decoration: none;
+}
+ul.menu li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+
+}
+ul.menu li:hover>ul{
+    visibility: visible;
+    opacity: 1;
+}
+ul.menu li li{
+    display: block;
+    white-space: nowrap;
+    width:100%;
+}
+
+ul.menu li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 102%; /*второй и последующие уровни расскрываются вправо*/
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*Конец меню*/
+
+
+ul.header li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: greenyellow;
+    list-style: none;
+    padding: 2px 2px;
+    text-align:center;
+    border-radius:8px;
+    z-index:100;
+}
+ul.header li:hover {
+    background: green;
+    position:relative;
+}
+
+ul.content li {
+    position: relative;
+    display: inline-block;
+    background: mediumspringgreen;
+    vertical-align: middle;
+    list-style: none;
+    padding: 2px 2px;
+    text-align:center;
+    border-radius:8px;
+    z-index:100;
+}
+ul.content li:hover {
+    background: green;
+    position:relative;
+}
+
+.show_info {
+    width:60%;
+    margin:0px auto;
+    margin-top: 5px;
+    text-align: left;
+}
+.show_info_session {
+    margin:0px auto;
+    margin-top: 5px;
+    margin-left: 30px;
+    text-align: left;
+}
+/* раздел для вызова выпадающего меню */
+.btn-slide {
+    /*background: transparent url("../images/login.gif") no-repeat scroll;*/
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    padding: 10px 10px 0px 0px;
+    margin: 0px auto;
+    display: block;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-decoration: none;
+}
+.slide :hover {
+    color: black;
+}
+.active {
+    background-image: url("https://cloclo22.datacloudmail.ru/weblink/view/LTay/hmNU4qsoq?etag=FCFE0E85C127C056CF07AA7070D527D12D2DFBC3&key=23383275a68e3ac3138ed0b0e969ee6f02a695a1");
+}
+/* конец раздела для вызова выпадающего меню */
+
+/*Рисунок для кнопки авторизации*/
+.submit
+{
+    background: none repeat scroll 0% 0% transparent;
+    position: relative;
+    right: -10px;
+    top: -20px;
+
+}
+.submit button {
+    padding: 0px;
+    margin: 0px;
+    border: medium none;
+    background: none repeat scroll 0% 0% transparent;
+    color: #22579E;
+    font: bold 10px Arial;
+    cursor: pointer;
+}
+/*Рамка вокруг активного поля ввода*/
+/*INPUT.text*/
+/*{*/
+    /*background:url(../images/input.png) no-repeat; !* Фон *!*/
+    /*border: none; !* Убираем рамку *!*/
+    /*padding:1px;*/
+    /*border-radius:3px;*/
+/*}*/
+
+/*Конец рамки вокруг активного поля ввода*/
+
+/*Фильтр фильмов*/
+.articles {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article {
+    color: #222;
+    width: 30%;
+    background: rgba(255,255,255,.9);
+    border-spacing: 2px;
+    border-color: gray;
+    font-family: arial,sans-serif;
+    border-bottom: 1px #e5e5e5 solid;
+    float: left;
+    border-radius:5px 5px 5px 5px;
+}
+
+.current .item {
+    background: rgba(206,220,206,.9);
+
+}
+
+.item {
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius:5px 5px 5px 5px;
+
+}
+
+.item .source {
+    margin-left: 20px;
+}
+
+.item .title {
+    font-weight: bold;
+}
+
+.item .pubdate {
+    margin-right: 20px;
+}
+
+.item .pubdate {
+    text-align: right;
+}
+
+.description {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description h1 {
+    margin-top: 0px;
+    font-size: 23px;
+}
+
+
+
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;}
+
+/* === Form Typography === */
+/*body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 11px;}*/
+
+/* === List Styles === */
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+
+/* === Form Header === */
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+.required_notification {
+    color:#d45252;
+    margin:5px 0 0 0;
+    display:inline;
+    float:right;
+}
+
+/* === Form Elements === */
+.contact_form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.contact_form input {
+    height:30px;
+    width:350px;
+    padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:340px;}
+.contact_form button {margin-left:156px;}
+
+/* form element visual styles */
+.contact_form input, .contact_form textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    width:350px;
+    padding-right:30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right:70px;
+}
+
+/* === HTML5 validation styles === */
+.contact_form input:required, .contact_form textarea:required {
+    background: #fff no-repeat 98% center;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+    background: #fff no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+    background: #fff no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+/* === Form hints === */
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+}
+.form_hint::before {
+    content: "\25C0";
+    color:#d45252;
+    position: absolute;
+    top:1px;
+    left:-6px;
+}
+.contact_form input:focus + .form_hint {display: inline;}
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+
+/* === Button Style === */
+button.submit {
+    background-color: #589BB1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#22ACB1), to(#50911e));
+    background: -webkit-linear-gradient(top, #22ACB1, #5BC5FF);
+    background: -moz-linear-gradient(top, #22ACB1, #5BC5FF);
+    background: -ms-linear-gradient(top, #22ACB1, #5BC5FF);
+    background: -o-linear-gradient(top, #22ACB1, #5BC5FF);
+    background: linear-gradient(top, #22ACB1, #5BC5FF);
+    border: 1px solid #2673DC;
+    border-bottom: 1px solid #118199;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #36CED5;
+    -webkit-box-shadow: 0 1px 0 0 #36CED5 inset ;
+    -moz-box-shadow: 0 1px 0 0 #36CED5 inset;
+    -ms-box-shadow: 0 1px 0 0 #36CED5 inset;
+    -o-box-shadow: 0 1px 0 0 #36CED5 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #33406B inset;
+    -webkit-box-shadow: 0 0 10px 5px #33406B inset;
+    -moz-box-shadow: 0 0 10px 5px #33406B inset;
+    -ms-box-shadow: 0 0 10px 5px #33406B inset;
+    -o-box-shadow: 0 0 10px 5px #33406B inset;
+}
+
+
+
+
+
+/*@charset "utf-8";*/
+
+html {
+     /*background: url(../images/im7.jpg) no-repeat center center fixed;*/
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    background-color:#85B4D7;
+    color: #941063;
+    font-family: 'Open Sans', sans-serif;
+ }
+
+/*body {*/
+    /*!*background-images: url(../images/im7.jpg) no-repeat center center fixed;*!*/
+    /*!*-moz-background-size: 100%;*!*/
+    /*!*-webkit-background-size: 100%;*!*/
+    /*!*-o-background-size: 100%;*!*/
+    /*!*background-size: 100%;*!*/
+
+    /*color: #ff8b7d;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-size: 16px;*/
+    /*background-color:#6B6485;*/
+/*}*/
+
+
+#login-form {
+    background-color: #7FA0FF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 70px auto;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    -webkit-box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+#login-form h1 {
+    background-color: #8588FF;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#login-form fieldset {
+    border: none;
+    padding: 20px;
+    position: relative;
+}
+
+
+#login-form fieldset form {
+    overflow: hidden;
+    width: 270px;
+}
+
+#login-form fieldset form input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    -webkit-appearance:none;
+    width: 260px;
+    align: center;
+    position: center;
+
+
+}
+
+#login-form fieldset form input[type="text"] {
+    border: 1px solid #292829;
+    border-radius:  3px;
+    -moz-border-radius:  3px;
+    -webkit-border-radius: 3px;
+    padding: 12px 10px;
+    width: 259px;
+    -webkit-appearance:none;
+}
+
+#login-form fieldset form input[type="password"] {
+    border: 1px solid #292829;
+    /*border-top: none;*/
+    border-radius:  3px;
+    -moz-border-radius:  3px;
+    -webkit-border-radius:  3px;
+    padding: 12px 10px;
+    width: 259px;
+    -webkit-appearance:none;
+}
+
+#login-form fieldset form input[type="submit"] {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #404040;
+    cursor: pointer;
+    float: none;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px 12px;
+    -webkit-appearance: none;
+}
+
+#login-form fieldset form input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+#login-form fieldset form span:before {
+    background-color: #c9c9c9;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    content: "?";
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+}
+
+#login-form fieldset form span {
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+#login-form fieldset form span a{
+    color: #eb6d1a;
+    text-decoration: none;
+}
+
+#login-form fieldset form span a:hover {
+    color: #eb6d1a;
+}
+
+/* Стили бара vladmaxi, можно удалить */
+.vladmaxi-top{
+    line-height: 24px;
+    font-size: 11px;
+    background: #eee;
+    text-transform: uppercase;
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-family: calibri;
+    font-size: 13px;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+    -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+@-webkit-keyframes slideOut{
+    0%{top:-30px; opacity: 0;}
+    100%{top:0px; opacity: 1;}
+}
+
+.vladmaxi-top a{
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #333;
+    text-shadow: 0px 1px 1px #fff;
+    display: block;
+    float: left;
+    text-decoration:none;
+}
+.vladmaxi-top a:hover{
+    background: #fff;
+}
+.vladmaxi-top span.right{
+    float: right;
+}
+.vladmaxi-top span.right a{
+    float: left;
+    display: block;
+}
+#demo_navi.name {
+    font-size: 18px;
+    padding: 0px 20px 0px 0px;
+    line-height: 48px;
+    color: #eeeeee;
+    font-weight: 200;
+    text-shadow: 0px 1px 0px #000;
+    float: right;
+    font-family: "Pontano Sans", Helvetica;
+}

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Sotaform:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sotaForm.war">
+      <element id="artifact" artifact-name="Sotaform:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mail-1.5.0-b01" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
